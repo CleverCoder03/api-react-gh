@@ -1,0 +1,2 @@
+#282c34   for Background Color.
+#61dafb   for Link Color.
