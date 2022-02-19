@@ -14,7 +14,8 @@
     height: 100vh;
 }
 .head{
-    color: #61dafb;
+    color: #0b4858;
+    /* color: #61dafb; */
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     word-spacing: 5px;
