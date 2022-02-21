@@ -3,23 +3,18 @@
     height: 80vh;
     overflow-y: scroll;
 }
-.cont{
-    visibility: hidden;
-}
-.cont2{
-    visibility: visible;
-}
+
 .table{
     transition: all 0.5s ease-in;
     margin: 1rem 0;
-}
-
-#clear{
-    margin: 0 2rem;
 }
 
 #navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.h1{
+    font-size: 3rem;
 }
