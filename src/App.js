@@ -59,6 +59,7 @@
 import React from 'react'
 import GetMethod from './Components/js/GetMethod'
 import PostMethod from './Components/js/PostMethod'
+import DeleteMethod from './Components/js/DeleteMethod'
 
 function App() {
   return (
@@ -70,7 +71,7 @@ function App() {
         <PostMethod />
       </div>
       <div id="Delete__method">
-        {/* <DeleteMethod /> */}
+        <DeleteMethod />
       </div>
     </div>
   )

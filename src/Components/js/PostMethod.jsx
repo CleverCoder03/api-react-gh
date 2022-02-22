@@ -19,7 +19,7 @@ function PostMethod() {
   }
   return (
     <div>
-      <h1 className="h1 text-primary text-center font-weight-bold">
+      <h1 className="h1 text-primary text-center font-weight-bold my-5">
         POST Method
       </h1>
       <div className="container d-flex align-items-center justify-content-center">
@@ -28,7 +28,7 @@ function PostMethod() {
             Primary
           </button>
         </div>
-        <div className="container d-flex align-items-center justify-content-left flex-column">
+        <div className="container d-flex align-items-center justify-content-left flex-column my-5">
             <div className="mb-3">
               <label className="form-label">Title</label>
               <input value={title} className="form-control" onChange={(e)=>{ setTitle(e.target.value) }} />

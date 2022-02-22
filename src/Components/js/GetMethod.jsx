@@ -113,7 +113,7 @@ function GetMethod() {
             </thead>
 
             <tbody className="animationOnLoad">
-              <tr>
+              <tr key={null}>
                 <td>{id}</td>
                 <td>{title}</td>
                 <td>{description}</td>
