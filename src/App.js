@@ -57,7 +57,8 @@
 // export default App;
 
 import React from 'react'
-import GetMethod from './Components/GetMethod'
+import GetMethod from './Components/js/GetMethod'
+import PostMethod from './Components/js/PostMethod'
 
 function App() {
   return (
@@ -66,7 +67,7 @@ function App() {
         <GetMethod />
       </div>
       <div id="Post__method">
-        {/* <PostMethod /> */}
+        <PostMethod />
       </div>
       <div id="Delete__method">
         {/* <DeleteMethod /> */}

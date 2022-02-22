@@ -1,7 +1,11 @@
-.container{
+#getMethodBox{
     background-color: aliceblue;
     height: 80vh;
     overflow-y: scroll;
+}
+
+.container{
+    background-color: aliceblue;
 }
 
 .table{
