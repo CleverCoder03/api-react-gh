@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Component.css";
+import "../css/Component.css";
 import Axios from "axios";
 
 function GetMethod() {

@@ -1,22 +1,18 @@
 import React, { useState } from "react";
-import "./PostMethod.css";
 import Axios from "axios";
 
 function PostMethod() {
   const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [pageCount, setpageCount] = useState("");
-  const [excerpt, setExcerpt] = useState("");
-  const [publishDate, setPublishDate] = useState("");
+  const [userId, setuserId] = useState("");
+  const [completed, setCompleted] = useState("");
 
   const bookData = (e) => {
     e.preventDefault();
-    Axios.post("https://fakerestapi.azurewebsites.net/api/v1/Books/", [{ 
+    Axios.post("https://jsonplaceholder.typicode.com/todos/", [{ 
         title, 
-        description, 
-        pageCount, 
-        excerpt, 
-        publishDate }]) 
+        userId, 
+        completed
+      }]) 
     .then(response => console.log("posting", response.data))
     .catch((err)=>{alert(err)})
 
@@ -39,19 +35,11 @@ function PostMethod() {
             </div>
             <div className="mb-3">
               <label className="form-label">Description</label>
-              <input value={description} className="form-control" onChange={(e)=>{ setDescription(e.target.value) }} />
+              <input value={userId} className="form-control" onChange={(e)=>{ setuserId(e.target.value) }} />
             </div>
             <div className="mb-3">
               <label className="form-label">Page Count</label>
-              <input value={pageCount} className="form-control" onChange={(e)=>{ setpageCount(e.target.value) }} />
-            </div>
-            <div className="mb-3">
-              <label className="form-label">Excerpt</label>
-              <input value={excerpt} className="form-control" onChange={(e)=>{ setExcerpt(e.target.value) }} />
-            </div>
-            <div className="mb-3">
-              <label className="form-label">Publish Date</label>
-              <input type="text" value={publishDate} className="form-control" onChange={(e)=>{ setPublishDate(e.target.value) }} />
+              <input value={completed} className="form-control" onChange={(e)=>{ setCompleted(e.target.value) }} />
             </div>
         </div>
       </div>
